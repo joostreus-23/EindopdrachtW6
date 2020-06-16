@@ -1,0 +1,155 @@
+body {
+  background-color: rgb(148, 128, 128);
+  margin: 0%;
+  padding: 0;
+  height: 100%;
+  color: cornsilk;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(146, 88, 88);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 150px;
+  top: 120px;
+  text-align: center;
+  list-style-type: none;
+  background-color: grey;
+}
+
+nav h2 {
+  position: block;
+  text-align: center;
+}
+#menubtn1 {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: rgba(1, 1, 1, 0);
+  /* border: 2px solid crimson; */
+  cursor: pointer;
+  z-index: 100;
+}
+.sidenavL {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 10;
+  top: -500px;
+  left: 0px;
+  width: 250px;
+  transition: 0.5s;
+  /* border: 2px solid black; */
+}
+.sidenavLOpen {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+  top: 280px;
+  left: 0px;
+  width: 250px;
+  transition: 1s;
+}
+.sidenavR {
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 10;
+  top: 100px;
+  right: 0px;
+  width: 250px;
+  margin-top: 0px;
+  transition: 0.5s;
+  /* border: 2px solid black; */
+}
+.sidenavROpen {
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 100;
+  top: 300px;
+  right: 0px;
+  width: 250px;
+  height: 60%;
+  margin-top: 0px;
+  transition: 0.5s;
+  /* border: 2px solid black; */
+}
+.persoonbutton {
+  display: block;
+  list-style-type: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px 0.2px rgba(0, 0, 0, 0.4);
+  background-color: rgb(211, 199, 199);
+}
+.persoonbutton:active {
+  color: white;
+}
+
+.filterbutton {
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px 0.2px rgba(0, 0, 0, 0.4);
+  background-color: grey;
+}
+
+#menubtn2 {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  margin-top: 50px;
+  margin-right: 20px;
+  background-color: rgba(1, 1, 1, 0);
+  /* border: 2px solid crimson; */
+  cursor: pointer;
+  z-index: 30;
+}
+
+.content {
+  position: fixed;
+
+  z-index: 1;
+  top: 270px;
+  /* height: 100%; */
+  width: 90%;
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.legenda {
+  position: fixed;
+  left: 0;
+  top: 270px;
+  width: 100%;
+  height: 150px;
+  color: white;
+  text-align: center;
+}
