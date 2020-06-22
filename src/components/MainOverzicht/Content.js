@@ -15,7 +15,7 @@ class Content extends React.Component {
       if (this.props.filterMoeilijk && this.props.filterLeuk) {
         return (
           <div className="content">
-            <VictoryChart width={1100} height={600} domainPadding={5}>
+            <VictoryChart width={1300} height={400} domainPadding={5}>
               <VictoryGroup
                 offset={5}
                 animate={{
@@ -41,8 +41,8 @@ class Content extends React.Component {
         return (
           <div className="content">
             <VictoryChart
-              width={1100}
-              height={600}
+              width={1300}
+              height={400}
               domainPadding={5}
               offsetX={225}
             >
@@ -67,8 +67,8 @@ class Content extends React.Component {
         return (
           <div className="content">
             <VictoryChart
-              width={1100}
-              height={600}
+              width={1300}
+              height={400}
               domainPadding={5}
               offsetX={225}
             >
@@ -93,8 +93,8 @@ class Content extends React.Component {
         return (
           <div className="content">
             <VictoryChart
-              width={1100}
-              height={600}
+              width={1300}
+              height={400}
               domainPadding={5}
               offsetX={225}
             >

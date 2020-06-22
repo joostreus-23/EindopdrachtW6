@@ -1,43 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: rgb(148, 128, 128);
+  background-color: #ffffff;
   margin: 0%;
   padding: 0;
-  height: 100%;
+  height: 10%;
   color: cornsilk;
+  overflow: scroll;
+}
+
+.main {
 }
 
 .header {
   width: 100%;
   height: 120px;
-  background-color: rgb(146, 88, 88);
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   text-align: center;
+  color: #4a90e2;
   /* border: 1px solid black; */
+}
+
+.header span {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+}
+
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top: 25px;
+  font-size: 50px;
 }
 
 nav {
   position: fixed;
   z-index: 100;
   width: 100%;
-  height: 150px;
+  height: 100px;
   top: 120px;
   text-align: center;
   list-style-type: none;
-  background-color: grey;
+  background-color: #4a90e2;
 }
 
 nav h2 {
-  position: block;
+  position: relative;
+  top: 25px;
   text-align: center;
+  color: #ffffff;
+  font-size: 40px;
 }
 #menubtn1 {
   width: 50px;
   height: 50px;
   position: fixed;
-  top: 120px;
+  top: 95px;
   left: 0;
   margin-top: 50px;
   margin-left: 20px;
@@ -50,7 +78,7 @@ nav h2 {
   box-sizing: border-box;
   position: fixed;
   z-index: 10;
-  top: -500px;
+  top: -600px;
   left: 0px;
   width: 250px;
   transition: 0.5s;
@@ -60,7 +88,7 @@ nav h2 {
   box-sizing: border-box;
   position: fixed;
   z-index: 100;
-  top: 280px;
+  top: 220px;
   left: 0px;
   width: 250px;
   transition: 1s;
@@ -80,7 +108,7 @@ nav h2 {
   position: fixed;
   box-sizing: border-box;
   z-index: 100;
-  top: 300px;
+  top: 220px;
   right: 0px;
   width: 250px;
   height: 60%;
@@ -91,15 +119,16 @@ nav h2 {
 .persoonbutton {
   display: block;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
-  padding: 20px;
-  border: 0.5px solid black;
+  padding: 10px;
+  border: 0.5px solid #4a90e2;
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
   box-shadow: 1px 2px 5px 0.2px rgba(0, 0, 0, 0.4);
-  background-color: rgb(211, 199, 199);
+  background-color: #4a90e2;
+  color: #ffffff;
 }
 .persoonbutton:active {
   color: white;
@@ -110,19 +139,20 @@ nav h2 {
   font-size: 20px;
   text-align: center;
   padding: 10px;
-  border: 0.5px solid black;
+  border: 0.5px solid #4a90e2;
   border-radius: 10px;
   margin: 5px;
   cursor: pointer;
   box-shadow: 1px 2px 5px 0.2px rgba(0, 0, 0, 0.4);
-  background-color: grey;
+  background-color: #4a90e2;
+  color: #ffffff;
 }
 
 #menubtn2 {
   width: 50px;
   height: 50px;
   position: fixed;
-  top: 120px;
+  top: 95px;
   right: 0;
   margin-top: 50px;
   margin-right: 20px;
@@ -133,23 +163,28 @@ nav h2 {
 }
 
 .content {
-  position: fixed;
-
+  position: relative;
   z-index: 1;
-  top: 270px;
-  /* height: 100%; */
+  top: 100px;
   width: 90%;
   margin: 5%;
-  justify-content: center;
-  align-items: center;
 }
 
 .legenda {
-  position: fixed;
-  left: 0;
-  top: 270px;
-  width: 100%;
-  height: 150px;
-  color: white;
+  display: block;
+  border: 2px solid #4a90e2;
+  position: relative;
+  margin: 10px auto;
+  top: 250px;
+  width: 200px;
+  height: 100px;
   text-align: center;
+  color: #4a90e2;
+  border-radius: 75px;
+}
+
+.legenda span {
+  font-size: 30px;
+  position: relative;
+  top: 10px;
 }
