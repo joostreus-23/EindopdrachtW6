@@ -11,6 +11,7 @@ import {
 
 class Content extends React.Component {
   render(props) {
+    //functie die door de state van moeilijk en leuk filterd
     const sliceFilter = () => {
       if (this.props.filterMoeilijk && this.props.filterLeuk) {
         return (

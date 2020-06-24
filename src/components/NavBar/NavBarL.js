@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 class NavBarL extends React.Component {
   render() {
+    //van de doorgekomen namen een navbar Links item maken
     const showNamen = this.props.namen.map((naam) => (
       <NavBarLItem
         naam={naam}

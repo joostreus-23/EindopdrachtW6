@@ -2,6 +2,7 @@ import React from "react";
 import SliceFilter from "./SliceFilter";
 
 function GemiddeldeFilter(props) {
+  //functie om de database te filteren op persoon naam
   const filterdata = (person) => {
     const persoondata = props.data.filter(
       (opdracht) => opdracht.persoon === "Evelyn"
@@ -9,6 +10,7 @@ function GemiddeldeFilter(props) {
     return persoondata;
   };
 
+  //functie die een array maakt van alle uitslagen van elke opdracht
   const perOpdrachtenFilter = () => {
     let perOpdracht = [];
     const alleopdrachten = filterdata("Evelyn").map(
@@ -24,6 +26,7 @@ function GemiddeldeFilter(props) {
   };
   let opdrachten = perOpdrachtenFilter();
 
+  //functie die een array en per opdracht een object maakt met de opdracht naam en gmiddelde van moeilijk en leuk
   const gemiddeldePerOpdrachtFilter = (i) => {
     let gemiddeldePerOpdracht = [];
     let naamOpdracht = [];
@@ -51,6 +54,7 @@ function GemiddeldeFilter(props) {
     return gemiddeldePerOpdracht;
   };
 
+  //functie die een array maakt van alle opdrachten, opdrachten dan als object met opdracht naam en gemiddelde van moeilijk en leuk
   const showGemiddeldeData = () => {
     let arrayData = [];
     for (let i = 0; i < opdrachten.length; i++) {

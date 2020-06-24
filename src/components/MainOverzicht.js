@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 import Header from "./Header";
 import PersonenFilter from "./MainOverzicht/Filters/PersonenFilter";
 import GemiddeldeFilter from "./MainOverzicht/Filters/GemiddeldeFilter";
-import Footer from "./Footer";
+import Legenda from "./Legenda";
 import Data from "./Data";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -19,11 +19,13 @@ class MainOverzicht extends React.Component {
   }
 
   render() {
+    // toggle van de linker navbar
     const navBarLtoggle = () => {
       const sideNavL = document.getElementById("mysidenavL");
       sideNavL.classList.toggle("sidenavLOpen");
     };
 
+    // de locatie state veranderen
     const locatieVeranderen = (naam) => {
       this.setState((pervstate) => {
         pervstate.locatie = "";
@@ -33,6 +35,7 @@ class MainOverzicht extends React.Component {
       });
       navBarLtoggle();
     };
+    // toggle van de state leuk filter
     const toggleFilterLeuk = () => {
       this.setState((pervstate) => {
         const toggle = pervstate.filterLeuk ? false : true;
@@ -41,6 +44,8 @@ class MainOverzicht extends React.Component {
         };
       });
     };
+
+    // toggle van de state moeilijk filter
     const toggleFilterMoeilijk = () => {
       this.setState((pervstate) => {
         const toggle = pervstate.filterMoeilijk ? false : true;
@@ -50,6 +55,7 @@ class MainOverzicht extends React.Component {
       });
     };
 
+    //functie om alleen de namen uit de database te halen
     const namenFilter = () => {
       let namen = [];
       this.state.data.forEach((opdracht) => {
@@ -62,6 +68,7 @@ class MainOverzicht extends React.Component {
 
     let namen = namenFilter();
 
+    //functie wat naar de gemiddeldefilter gestuurd moet worden
     const gemiddeldeFilter = () => {
       return (
         <GemiddeldeFilter
@@ -72,6 +79,8 @@ class MainOverzicht extends React.Component {
         />
       );
     };
+
+    //functie wat naar de personenfilter gestuurd moet worden
     const personenFilter = () => {
       return (
         <PersonenFilter
@@ -97,7 +106,7 @@ class MainOverzicht extends React.Component {
             namen={namen}
             navBarLtoggle={navBarLtoggle}
           />
-          <Footer />
+          <Legenda />
           <Switch>
             <Route path="/" exact component={gemiddeldeFilter} />
             <Route path="/student/:id" component={personenFilter} />

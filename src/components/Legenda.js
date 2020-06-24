@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+function Legenda() {
   return (
     <div className="legenda">
       <h3>legenda</h3>
@@ -10,4 +10,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Legenda;

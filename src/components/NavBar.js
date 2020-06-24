@@ -4,10 +4,13 @@ import NavBarL from "./NavBar/NavBarL";
 import { Link } from "react-router-dom";
 import NavBarR from "./NavBar/NavBarR";
 function NavBar(props) {
+  //functie die de class van de navbar Links toggled tussen normaal en open
   const navBarLtoggle = () => {
     const sideNavL = document.getElementById("mysidenavL");
     sideNavL.classList.toggle("sidenavLOpen");
   };
+
+  //functie die de class van de navbar Rechts toggled tussen normaal en open
   const navBarRtoggle = () => {
     const sideNavR = document.getElementById("mysidenavR");
     sideNavR.classList.toggle("sidenavROpen");

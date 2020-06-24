@@ -3,9 +3,9 @@ import Content from "../Content";
 import SliceFilter from "./SliceFilter";
 
 function PersonenFilter(props) {
-  const alleopdrachten = props.data.map((opdracht) => opdracht.opdracht);
-
   let person = props.locatie;
+
+  // functie die de database filterd met de persoon uit de state
   const filterdata = (person) => {
     const persoondata = props.data.filter(
       (opdracht) => opdracht.persoon === person
